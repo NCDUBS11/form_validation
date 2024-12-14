@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sintony:wght@400;700&display=swap");
+
+:root {
+  --bg-color: #525252;
+  --fc-std: #ffedd8;
+  --fc-input: #101222;
+  --fs-small: 0.8rem;
+  --fs-reg: 1.15rem;
+  --fs-large: 1.6rem;
+  --fw-thin: 400;
+  --fw-reg: 500;
+  --fw-bold: 700;
+}
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-size: var(--fs-reg);
+  color: var(--fc-std);
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  display: block;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url(./images/canyon.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+}
+
+input {
+  color: var(--fc-input);
+}
+
+nav {
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+}
+
+.darkMode {
+  display: block;
+  width: fit-content;
+  margin-inline-start: auto;
+}
+
+fieldset {
+  border: none;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* input:invalid {
+    border: 2px dashed red;
+  }
+  
+  input:invalid:required {
+    background-image: linear-gradient(to right, pink, lightgreen);
+  }
+  
+  input:valid {
+    border: 2px solid black;
+  } */
