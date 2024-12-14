@@ -1,7 +1,7 @@
 {
-  "name": "dyn_ui_elements",
+  "name": "Form Validation",
   "version": "1.0.0",
-  "description": "Set of JS modules used with dyanic UI elements",
+  "description": "Practice with form validation.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
