@@ -16,13 +16,19 @@
     </header>
     <main>
       <div class="formWrapper">
-        <form id="practiceForm" class="practiceForm">
+        <form id="practiceForm" class="practiceForm" novalidate>
           <fieldset>
             <legend>Practice Form</legend>
             <div class="formGroup">
               <div class="formItem title">
                 <label for="title">Title</label>
-                <input type="text" id="inputTitle" name="title" required />
+                <input
+                  type="text"
+                  id="inputTitle"
+                  name="title"
+                  max="30"
+                  required
+                />
               </div>
               <div class="formItem date">
                 <label for="date">Date</label>
@@ -34,12 +40,13 @@
               </div>
               <div class="formItem description">
                 <label for="description">Description</label>
-                <input
-                  type="textarea"
+                <textarea
+                  type="text"
+                  rows="4"
                   id="inputDescription"
                   name="description"
-                  required
-                />
+                  maxlength="90"
+                ></textarea>
               </div>
             </div>
             <div class="buttonGroup">

@@ -2,10 +2,10 @@
 
 :root {
   --bg-color: rgba(82, 82, 82, 0.4);
-  --bg-color-toggled: rgba(0, 16, 107, 0.4);
+  --bg-color-toggled: rgba(0, 38, 255, 0.726);
   --brdr-color: rgb(43, 34, 71);
   --fc-std: #ffedd8;
-  --fc-input: #101222;
+  --fc-input: #0b0c16;
   --fs-small: 0.75rem;
   --fs-reg: 1rem;
   --fs-large: 1.3rem;
@@ -42,10 +42,6 @@ body {
   background-position: center;
   display: grid;
   grid-template-rows: min-content 1fr;
-}
-
-input {
-  color: var(--fc-input);
 }
 
 nav {
@@ -125,7 +121,7 @@ legend {
   border: 2px solid var(--brdr-color);
   border-radius: 20px;
   padding-inline: 1rem;
-  padding-block: 1.25rem;
+  padding-block: 1rem;
   backdrop-filter: blur(3px);
   box-shadow:
     -8px 8px 4px rgba(0, 0, 0, 0.9),
@@ -137,6 +133,22 @@ legend {
   gap: 1.5rem;
   justify-content: center;
   align-items: center;
+}
+
+input,
+input[type="date"],
+textarea {
+  color: var(--fc-input);
+  padding-inline: 0.5rem;
+  padding-block: 0.25rem;
+  border-radius: 10px;
+  resize: none;
+}
+
+input:user-invalid,
+input[type="date"]:user-invalid,
+textarea:user-invalid {
+  border-left: 5px solid red;
 }
 
 .formGroup {
@@ -162,6 +174,7 @@ button.submit {
   margin-block-start: 0.2rem;
   color: var(--fc-input);
   border-radius: 15px;
+  transition: all 0.04s ease-in-out;
 }
 
 button.cancel {
@@ -173,6 +186,20 @@ button.cancel {
   color: var(--fc-std);
   font-size: var(--fs-small);
   text-decoration: underline;
+  transition: all 0.04s ease-in-out;
+}
+
+button.submit:hover {
+  scale: 1.025;
+}
+
+button.cancel:hover {
+  font-weight: var(--fw-bold);
+}
+
+button.submit:active,
+button.cancel:active {
+  scale: 0.975;
 }
 
 /* input:invalid {
