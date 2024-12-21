@@ -39,9 +39,10 @@ body {
   background-image: url(./images/canyon.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
   display: grid;
   grid-template-rows: min-content 1fr;
+  transition: background-image 0.2s ease-in-out;
 }
 
 nav {
@@ -171,7 +172,7 @@ textarea:user-invalid {
 button.submit {
   width: 75%;
   padding-block: 0.3rem;
-  margin-block-start: 0.2rem;
+  margin-block-end: 0.25rem;
   color: var(--fc-input);
   border-radius: 15px;
   transition: all 0.04s ease-in-out;
@@ -179,7 +180,7 @@ button.submit {
 
 button.cancel {
   position: absolute;
-  top: -1.2rem;
+  bottom: -0.75rem;
   right: 0;
   background: none;
   border: none;

@@ -26,7 +26,7 @@
                   type="text"
                   id="inputTitle"
                   name="title"
-                  max="30"
+                  maxlength="23"
                   required
                 />
               </div>
@@ -42,7 +42,7 @@
                 <label for="description">Description</label>
                 <textarea
                   type="text"
-                  rows="4"
+                  rows="3"
                   id="inputDescription"
                   name="description"
                   maxlength="90"
@@ -50,8 +50,12 @@
               </div>
             </div>
             <div class="buttonGroup">
-              <button type="button" class="cancel">Cancel</button>
-              <button type="button" class="submit">Submit</button>
+              <button type="button" id="cancelBtn" class="cancel">
+                Cancel
+              </button>
+              <button type="button" id="submitBtn" class="submit">
+                Submit
+              </button>
             </div>
           </fieldset>
         </form>

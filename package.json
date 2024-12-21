@@ -98,6 +98,7 @@
     "data-view-buffer": "^1.0.1",
     "data-view-byte-length": "^1.0.1",
     "data-view-byte-offset": "^1.0.0",
+    "date-fns": "^4.1.0",
     "debug": "^2.6.9",
     "deep-is": "^0.1.4",
     "default-browser": "^5.2.1",
